@@ -12,10 +12,10 @@ body {
 }
 
 header .primary-nav {
-  padding: 10px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
-  background-color: #232f3e;
+  background-color: #131921;
   color: #ffffff;
 }
 header .primary-nav .pn-left {
@@ -149,4 +149,44 @@ header .primary-nav .pn-right .pn-r-cart .pn-r-cart-icon .cart-count {
 }
 header .primary-nav .pn-right .pn-r-cart span {
   font-size: 14px;
+}
+header .nav-belt {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #232f3e;
+  color: #ffffff;
+}
+header .nav-belt .nb-left {
+  display: flex;
+  align-items: center;
+}
+header .nav-belt .nb-left .nbl-icon .line {
+  height: 2px;
+  width: 20px;
+  background-color: #ffffff;
+  margin: 5px 0px;
+}
+header .nav-belt .nb-left p {
+  margin-left: 5px;
+}
+header .nav-belt .nb-fill {
+  display: flex;
+}
+header .nav-belt .nb-fill a {
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+  margin: 10px;
+}
+header .nav-belt .nb-right {
+  width: 400px;
+  height: 39px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  border: none;
+  background-size: inherit;
+  position: absolute;
+  right: 0;
 }/*# sourceMappingURL=mixins.css.map */
