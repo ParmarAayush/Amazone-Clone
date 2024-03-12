@@ -172,13 +172,14 @@ header .nav-belt .nb-left p {
 }
 header .nav-belt .nb-fill {
   display: flex;
+  overflow: hidden;
 }
 header .nav-belt .nb-fill a {
+  padding: 8px 12px;
   font-size: 14px;
   text-decoration: none;
   color: inherit;
   font-weight: 400;
-  margin: 10px;
 }
 header .nav-belt .nb-right {
   width: 400px;

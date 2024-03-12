@@ -210,14 +210,14 @@ header {
 
         .nb-fill {
             display: flex;
+            overflow: hidden;
 
             a {
-
+                padding: 8px 12px;
                 font-size: 14px;
                 text-decoration: none;
                 color: inherit;
                 font-weight: 400;
-                margin: 10px;
             }
         }
 
