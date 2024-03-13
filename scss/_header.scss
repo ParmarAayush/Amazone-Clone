@@ -5,6 +5,7 @@
 *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 html,
@@ -14,7 +15,7 @@ body {
 
 header {
     .primary-nav {
-        padding: 5px 10px;
+        padding: 10px 0px;
         display: flex;
         align-items: center;
         background-color: $blue-shade-main-nav;
@@ -22,12 +23,10 @@ header {
 
         .pn-left {
             display: flex;
-            align-items: center;
-            flex-grow: 1;
+            margin: 0 15px;
 
             a {
                 display: flex;
-                flex-grow: 1;
                 text-decoration: none;
                 color: $pure-white;
                 font-weight: 400;
@@ -43,15 +42,13 @@ header {
 
             .pn-location {
                 display: flex;
-                flex-grow: 1;
-                align-items: center;
+                margin: 0 15px;
 
                 .pn-loc-icon {
                     width: 19px;
                     height: 18px;
-                    padding: 10px;
-                    background: url("../assets/img/sprit-images.png") no-repeat -69px -379px;
                     align-self: flex-end;
+                    background: url("../assets/img/sprit-images.png") no-repeat -69px -379px;
                 }
 
                 .pn-loc-text {
@@ -74,22 +71,22 @@ header {
         }
 
         .pn-fill {
-            width: 60%;
-            margin: 0 10px;
+            margin: 0 15px;
+            height: 46px;
             display: flex;
-            flex-grow: 1;
+            flex-grow: 2;
             border-radius: 6px;
             border: 3px solid transparent;
 
 
             #list-product {
+                width: 70px;
+                padding: 0px 10px;
                 font-family: $font-family-v2;
                 outline: none;
                 border: none;
                 border-top-left-radius: 3px;
                 border-bottom-left-radius: 3px;
-                width: 45px;
-                height: 40px;
 
             }
 
@@ -100,14 +97,12 @@ header {
             }
 
             .pn-fill-search-icon {
-                height: 100%;
                 display: flex;
 
                 .pn-fill-search-glass {
                     border-top-right-radius: 3px;
                     border-bottom-right-radius: 3px;
                     width: 45px;
-                    height: 40px;
                     background: url("../assets/img/sprit-images.png") no-repeat 0px -277px;
                     background-color: $light-yellow;
 
@@ -121,9 +116,9 @@ header {
         }
 
         .pn-right {
+            margin: 0 15px;
             display: flex;
             align-items: center;
-            flex-grow: 1;
             list-style-type: none;
 
             a {
@@ -135,11 +130,9 @@ header {
             .pn-r-flag {
 
                 display: flex;
-                flex-grow: 1;
                 align-items: center;
 
                 img {
-                    padding: 5px;
                     width: 25px;
                     height: 25px;
                 }
@@ -160,8 +153,6 @@ header {
 
             .pn-r-cart {
                 display: flex;
-                flex-grow: 1;
-                align-items: flex-end;
 
                 .pn-r-cart-icon {
                     background: url("../assets/img/sprit-images.png") no-repeat -213px -332px;
@@ -177,59 +168,11 @@ header {
                 }
 
                 span {
+                    align-self: flex-end;
                     font-size: 14px;
                 }
             }
         }
     }
 
-    .nav-belt {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        background-color: $blue-shade;
-        color: $pure-white;
-
-        .nb-left {
-            display: flex;
-            align-items: center;
-
-            .nbl-icon {
-                .line {
-                    height: 2px;
-                    width: 20px;
-                    background-color: $pure-white;
-                    margin: 5px 0px;
-                }
-            }
-
-            p {
-                margin-left: 5px;
-            }
-        }
-
-        .nb-fill {
-            display: flex;
-            overflow: hidden;
-
-            a {
-                padding: 8px 12px;
-                font-size: 14px;
-                text-decoration: none;
-                color: inherit;
-                font-weight: 400;
-            }
-        }
-
-        .nb-right {
-            width: 400px;
-            height: 39px;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            border: none;
-            background-size: inherit;
-            position: absolute;
-            right: 0;
-        }
-    }
 }

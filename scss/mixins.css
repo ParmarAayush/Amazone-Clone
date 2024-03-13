@@ -4,6 +4,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html,
@@ -12,7 +13,7 @@ body {
 }
 
 header .primary-nav {
-  padding: 5px 10px;
+  padding: 10px 0px;
   display: flex;
   align-items: center;
   background-color: #131921;
@@ -20,12 +21,10 @@ header .primary-nav {
 }
 header .primary-nav .pn-left {
   display: flex;
-  align-items: center;
-  flex-grow: 1;
+  margin: 0 15px;
 }
 header .primary-nav .pn-left a {
   display: flex;
-  flex-grow: 1;
   text-decoration: none;
   color: #ffffff;
   font-weight: 400;
@@ -39,15 +38,13 @@ header .primary-nav .pn-left a .pn-logo {
 }
 header .primary-nav .pn-left .pn-location {
   display: flex;
-  flex-grow: 1;
-  align-items: center;
+  margin: 0 15px;
 }
 header .primary-nav .pn-left .pn-location .pn-loc-icon {
   width: 19px;
   height: 18px;
-  padding: 10px;
-  background: url("../assets/img/sprit-images.png") no-repeat -69px -379px;
   align-self: flex-end;
+  background: url("../assets/img/sprit-images.png") no-repeat -69px -379px;
 }
 header .primary-nav .pn-left .pn-location .pn-loc-text .pn-loc-text-light {
   font-size: 12px;
@@ -62,21 +59,21 @@ header .primary-nav .pn-left .pn-location .pn-loc-text .pn-loc-text-dark {
   font-size: 14px;
 }
 header .primary-nav .pn-fill {
-  width: 60%;
-  margin: 0 10px;
+  margin: 0 15px;
+  height: 46px;
   display: flex;
-  flex-grow: 1;
+  flex-grow: 2;
   border-radius: 6px;
   border: 3px solid transparent;
 }
 header .primary-nav .pn-fill #list-product {
+  width: 70px;
+  padding: 0px 10px;
   font-family: "Amazon Ember V2";
   outline: none;
   border: none;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  width: 45px;
-  height: 40px;
 }
 header .primary-nav .pn-fill #pn-fill-search-txt {
   width: 100%;
@@ -84,14 +81,12 @@ header .primary-nav .pn-fill #pn-fill-search-txt {
   border: none;
 }
 header .primary-nav .pn-fill .pn-fill-search-icon {
-  height: 100%;
   display: flex;
 }
 header .primary-nav .pn-fill .pn-fill-search-icon .pn-fill-search-glass {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   width: 45px;
-  height: 40px;
   background: url("../assets/img/sprit-images.png") no-repeat 0px -277px;
   background-color: #febd69;
 }
@@ -100,9 +95,9 @@ header .primary-nav .pn-fill:focus-within {
   border: 3px solid #f3a847;
 }
 header .primary-nav .pn-right {
+  margin: 0 15px;
   display: flex;
   align-items: center;
-  flex-grow: 1;
   list-style-type: none;
 }
 header .primary-nav .pn-right a {
@@ -112,11 +107,9 @@ header .primary-nav .pn-right a {
 }
 header .primary-nav .pn-right .pn-r-flag {
   display: flex;
-  flex-grow: 1;
   align-items: center;
 }
 header .primary-nav .pn-right .pn-r-flag img {
-  padding: 5px;
   width: 25px;
   height: 25px;
 }
@@ -133,8 +126,6 @@ header .primary-nav .pn-right .pn-r-account-dark {
 }
 header .primary-nav .pn-right .pn-r-cart {
   display: flex;
-  flex-grow: 1;
-  align-items: flex-end;
 }
 header .primary-nav .pn-right .pn-r-cart .pn-r-cart-icon {
   background: url("../assets/img/sprit-images.png") no-repeat -213px -332px;
@@ -148,46 +139,6 @@ header .primary-nav .pn-right .pn-r-cart .pn-r-cart-icon .cart-count {
   color: #f3a847;
 }
 header .primary-nav .pn-right .pn-r-cart span {
+  align-self: flex-end;
   font-size: 14px;
-}
-header .nav-belt {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  background-color: #232f3e;
-  color: #ffffff;
-}
-header .nav-belt .nb-left {
-  display: flex;
-  align-items: center;
-}
-header .nav-belt .nb-left .nbl-icon .line {
-  height: 2px;
-  width: 20px;
-  background-color: #ffffff;
-  margin: 5px 0px;
-}
-header .nav-belt .nb-left p {
-  margin-left: 5px;
-}
-header .nav-belt .nb-fill {
-  display: flex;
-  overflow: hidden;
-}
-header .nav-belt .nb-fill a {
-  padding: 8px 12px;
-  font-size: 14px;
-  text-decoration: none;
-  color: inherit;
-  font-weight: 400;
-}
-header .nav-belt .nb-right {
-  width: 400px;
-  height: 39px;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  border: none;
-  background-size: inherit;
-  position: absolute;
-  right: 0;
 }/*# sourceMappingURL=mixins.css.map */
