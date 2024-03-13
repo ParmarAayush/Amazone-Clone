@@ -15,7 +15,7 @@ body {
 
 header {
     .primary-nav {
-        padding: 10px 0px;
+        padding: 5px 0px;
         display: flex;
         align-items: center;
         background-color: $blue-shade-main-nav;
@@ -175,4 +175,53 @@ header {
         }
     }
 
+    .nav-belt {
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        background-color: $blue-shade;
+        color: $pure-white;
+
+        .nb-left {
+            display: flex;
+            align-items: center;
+
+            .nbl-icon {
+                .line {
+                    height: 2px;
+                    width: 20px;
+                    background-color: $pure-white;
+                    margin: 5px 0px;
+                }
+            }
+
+            span {
+                margin-left: 5px;
+            }
+        }
+
+        .nb-fill {
+            display: flex;
+            overflow: hidden;
+
+            a {
+                padding: 8px 12px;
+                font-size: 14px;
+                text-decoration: none;
+                color: inherit;
+                font-weight: 400;
+            }
+        }
+
+        .nb-right {
+            width: 400px;
+            height: 39px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            border: none;
+            background-size: inherit;
+            position: absolute;
+            right: 0;
+        }
+    }
 }
