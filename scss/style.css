@@ -14,8 +14,6 @@
 html,
 body {
   font-family: "Amazon Ember";
-  display: flex;
-  flex-direction: column;
 }
 
 header .primary-nav {
@@ -190,19 +188,9 @@ header .nav-belt .nb-right {
   right: 0;
 }
 
-footer {
-  margin-top: auto;
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-  background-color: red;
-  z-index: 2;
-}
-
 section {
   width: 80%;
   margin: 0 auto;
-  min-height: calc(100vh - 270px);
 }
 section .swiper {
   width: 100%;
