@@ -11,6 +11,8 @@
 html,
 body {
     font-family: $font-family;
+    display: flex;
+    flex-direction: column;
 }
 
 header {

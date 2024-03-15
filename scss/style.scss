@@ -1,8 +1,10 @@
 @import "header";
+@import "footer";
 
 section {
     width: 80%;
     margin: 0 auto;
+    min-height: calc(100vh - 270px);
 
     .swiper {
         width: 100%;
