@@ -1,4 +1,8 @@
 @import url("../assets/fonts/fonts.css");
+:root {
+  --swiper-navigation-top-offset: 10%;
+}
+
 *,
 *::before,
 *::after {
@@ -182,4 +186,59 @@ header .nav-belt .nb-right {
   background-size: inherit;
   position: absolute;
   right: 0;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+section .swiper {
+  width: 100%;
+  height: 100%;
+}
+section .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section .products-layout {
+  width: inherit;
+  position: absolute;
+  top: 25%;
+  border: 2px solid red;
+  z-index: 2;
+}
+section .products-layout .row {
+  margin: 15px;
+  border: 2px solid rgb(146, 50, 205);
+  display: flex;
+}
+section .products-layout .row .col {
+  width: 100%;
+  border: 2px solid rgb(26, 255, 0);
+}
+section .products-layout .row .col .products {
+  margin: 5px;
+  background-color: white;
+  border: 2px solid lightgreen;
+}
+section .products-layout .row .col .products .p-row {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  margin: 5px;
+}
+section .products-layout .row .col .products .p-row .p-col {
+  margin: 5px;
+  background-color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

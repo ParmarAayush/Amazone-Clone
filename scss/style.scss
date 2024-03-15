@@ -1,1 +1,70 @@
 @import "header";
+
+section {
+    width: 80%;
+    margin: 0 auto;
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+    }
+
+    .products-layout {
+        width: inherit;
+        position: absolute;
+        top: 25%;
+        border: 2px solid red;
+        z-index: 2;
+
+        .row {
+            margin: 15px;
+            border: 2px solid rgb(146, 50, 205);
+            display: flex;
+
+            .col {
+                width: 100%;
+                border: 2px solid rgb(26, 255, 0);
+
+                .products {
+                    margin: 5px;
+                    background-color: white;
+                    border: 2px solid lightgreen;
+
+                    .p-row {
+                        display: flex;
+                        flex-direction: row;
+                        background-color: $pure-white;
+                        margin: 5px;
+
+                        .p-col {
+                            margin: 5px;
+                            background-color: $pure-white;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}

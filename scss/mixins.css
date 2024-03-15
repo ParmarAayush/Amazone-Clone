@@ -1,4 +1,8 @@
 @import url("../assets/fonts/fonts.css");
+:root {
+  --swiper-navigation-top-offset: 10%;
+}
+
 *,
 *::before,
 *::after {

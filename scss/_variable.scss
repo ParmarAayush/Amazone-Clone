@@ -1,5 +1,9 @@
 @import url("../assets/fonts/fonts.css");
 
+:root {
+    --swiper-navigation-top-offset: 10%;
+}
+
 $font-family: 'Amazon Ember';
 $font-family-v2: 'Amazon Ember V2';
 $yellow: #f3a847;
