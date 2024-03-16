@@ -13,6 +13,7 @@
 
 html,
 body {
+  background-color: #E3E6E6;
   font-family: "Amazon Ember";
   display: flex;
   flex-direction: column;
