@@ -3,7 +3,7 @@
 
 section {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 
     .swiper {
         width: 100%;
@@ -28,16 +28,16 @@ section {
     }
 
     .products-layout {
-        width: inherit;
-        position: absolute;
-        top: 25%;
-        border: 2px solid red;
+        margin-top: -200px;
+        position: relative;
         z-index: 2;
+        border: 2px solid red;
 
         .row {
             margin: 15px;
             border: 2px solid rgb(146, 50, 205);
             display: flex;
+            overflow: hidden;
 
             .col {
                 width: 100%;
@@ -64,8 +64,4 @@ section {
             }
         }
     }
-
-
-
-
 }
