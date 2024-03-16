@@ -192,8 +192,70 @@ header .nav-belt .nb-right {
 }
 
 footer {
-  border: 3px solid saddlebrown;
   margin-top: auto;
+  color: #ccc;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+  margin: 5px 0px;
+}
+footer .top {
+  width: 100%;
+  padding: 10px;
+  background-color: #37475A;
+  text-align: center;
+}
+footer .fill {
+  background-color: #232f3e;
+  border-bottom: 1px solid #3A4553;
+}
+footer .fill .links {
+  font-size: 14px;
+  padding: 60px 50px;
+  display: flex;
+  justify-content: center;
+}
+footer .fill .links .link {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+footer .fill .links .link .heading {
+  color: #ffffff;
+  font-weight: 600;
+  margin: 10px 0px;
+  font-size: 16px;
+}
+footer .fill .links .link + .link {
+  margin-left: 60px;
+}
+footer .bottom {
+  background-color: #131921;
+}
+footer .bottom span {
+  display: block;
+}
+footer .bottom .heading {
+  color: #ffffff;
+}
+footer .bottom .b-link {
+  padding: 60px 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: #ccc;
+}
+footer .bottom .b-link .col {
+  margin: 0px 65px;
+  display: flex;
+  flex-direction: column;
+}
+footer .bottom .b-link + .b-link {
+  padding: 0;
+}
+footer .bottom .b-link + .b-link span + span {
+  margin: 0px 10px;
 }
 
 section {
