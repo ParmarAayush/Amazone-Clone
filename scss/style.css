@@ -220,7 +220,7 @@ section .swiper .swiper-slide img {
      object-fit: cover;
 }
 section .products-layout {
-  margin-top: -200px;
+  margin-top: -350px;
   position: relative;
   z-index: 2;
   border: 2px solid red;
