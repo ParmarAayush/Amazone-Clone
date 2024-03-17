@@ -135,4 +135,106 @@ section {
         }
     }
 
+    .wrapper {
+        position: relative;
+
+        .action {
+
+            .pre {
+                height: 100px;
+                width: 50px;
+                background-color: $pure-white;
+                position: absolute;
+                top: 28%;
+                left: 0.5%;
+
+                .line1 {
+                    background-color: black;
+                    height: 50px;
+                    width: 5px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    left: 20px;
+                    top: 5px;
+                }
+
+                .line2 {
+                    background-color: black;
+                    height: 50px;
+                    width: 5px;
+                    transform: rotate(-45deg);
+                    position: absolute;
+                    left: 20px;
+                    top: 39px;
+                }
+            }
+
+            .next {
+                height: 100px;
+                width: 50px;
+                background-color: $pure-white;
+                position: absolute;
+                top: 28%;
+                right: 0;
+
+                .line1 {
+                    background-color: black;
+                    height: 50px;
+                    width: 5px;
+                    transform: rotate(-45deg);
+                    position: absolute;
+                    right: 20px;
+                    top: 5px;
+                }
+
+                .line2 {
+                    background-color: black;
+                    height: 50px;
+                    width: 5px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    right: 20px;
+                    top: 39px;
+
+
+                }
+            }
+        }
+
+        .carousel {
+            display: grid;
+            grid-auto-flow: column;
+            // grid-auto-columns: calc((100% / 8) - 12px);
+            gap: 15px;
+            overflow: hidden;
+            scroll-behavior: smooth;
+            // overflow: auto;
+            // scrollbar-width: none;
+
+            // &::-webkit-scrollbar {
+            //     display: none;
+            //     /* WebKit */
+            // }
+
+            .card {
+                list-style-type: none;
+
+                .img {
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .carousel.dragging {
+            scroll-behavior: auto;
+        }
+
+        .carousel.dragging .card {
+            cursor: grab;
+            user-select: none;
+        }
+    }
 }
