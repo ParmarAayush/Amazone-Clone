@@ -285,7 +285,7 @@ section .swiper .swiper-slide img {
           mask-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0) 99%);
 }
 section .product-grid {
-  margin-top: -350px;
+  margin-top: -23%;
   position: relative;
   z-index: 2;
   display: grid;
