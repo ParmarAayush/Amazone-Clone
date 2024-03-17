@@ -372,6 +372,7 @@ section .product-grid .four-product .row a {
   padding: 15px;
 }
 section .wrapper {
+  margin: 15px 15px;
   position: relative;
 }
 section .wrapper .action .pre {
